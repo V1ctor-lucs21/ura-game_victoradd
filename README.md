@@ -1,2 +1,5 @@
-# ura-game_victoradd
-Tela_winner editada
+## Explicação sobre `ordem de execução de movimentos`
+Por hora, os movimentos são executados por ordem que foi colocado os blocos, se primeiro você colocou um bloco de "Forward" então primeiro ele vai avançar, a ordem que você colocar os blocos, é a que vai ser a sequencia do movimento, não esta por ordem de cima para baixo ou coisa do tipo, e sim a ordem do qual colocou primeiro.
+
+## Explicação sobre `blocos.inicializacao`
+No projeto, os blocos são armazenados inicialmente em um vetor e, em seguida, adicionados a um vetor que define a sequência de movimentos. No entanto, havia um problema: os blocos padrão, que são exibidos na parte superior da interface, acabavam sendo incluídos nesse vetor de movimentos. Esses blocos padrão têm como propósito apenas a visualização e o arrasto, não devendo influenciar na sequência de movimentos. Para resolver isso, foi introduzido o blocos.inicializacao. Esse mecanismo garante que o conteúdo só seja adicionado ao vetor de movimentos após a conclusão da fase de inicialização. Assim, os blocos padrão permanecem exclusivamente para visualização e manipulação, sem interferir na lógica de movimentos do projeto.

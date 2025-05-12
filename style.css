@@ -1,0 +1,10 @@
+/* Define o fundo da página como preto */
+body {
+    background-color: black; /* Cor de fundo preta */
+    margin: 0; /* Remove a margem padrão */
+    height: 100vh; /* Define a altura da página para 100% da altura da viewport */
+    display: flex; /* Usado para centralizar o canvas */
+    justify-content: center; /* Centraliza o canvas horizontalmente */
+    align-items: center; /* Centraliza o canvas verticalmente */
+}
+
